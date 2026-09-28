@@ -7,7 +7,7 @@
     <title>Engineers.MY | Malaysian tech community</title>
     <meta name="description" content="Engineers.MY supports the Malaysian technology scene by connecting people, sharing knowledge and collaborating on open source. Join us on Discord.">
     <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#141416" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#2a2733" media="(prefers-color-scheme: dark)">
     <meta name="color-scheme" content="light dark">
     <link rel="canonical" href="https://engineers.my/">
 
@@ -28,6 +28,7 @@
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/morph.js" defer></script>
 
     <!-- Mono font is decorative only: load it without blocking first paint -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -120,6 +121,43 @@
                         </p>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <section class="polyglot">
+            <div class="wrap polyglot-grid">
+                <div class="polyglot-copy">
+                    <p class="eyebrow">// every stack welcome</p>
+                    <h2><span class="lang-rust">Rustaceans</span>, <span class="lang-ruby">Rubyists</span> and everyone in between</h2>
+                    <p>
+                        Whatever language you write, bring it along. Someone here writes it
+                        too, and someone else is curious about it.
+                    </p>
+                </div>
+                <figure class="morph" data-morph data-lang="rust">
+                    <div class="morph-bar">
+                        <span class="morph-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                        <span class="morph-file" aria-hidden="true">main.rs</span>
+                        <button class="morph-toggle" type="button" aria-pressed="false" aria-label="Pause code animation" hidden>
+                            <svg class="icon-pause" aria-hidden="true" viewBox="0 0 16 16" width="14" height="14"><path fill="currentColor" d="M4 2.5h2.5v11H4zM9.5 2.5H12v11H9.5z"/></svg>
+                            <svg class="icon-play" aria-hidden="true" viewBox="0 0 16 16" width="14" height="14"><path fill="currentColor" d="M4.5 2.5v11l9-5.5z"/></svg>
+                        </button>
+                    </div>
+                    <pre aria-hidden="true"><code>fn greet(name: &amp;str) -&gt; String {
+    format!("Selamat datang, {name}!")
+}
+
+fn main() {
+    let crew = ["rustacean", "rubyist"];
+    for who in crew {
+        println!("{}", greet(who));
+    }
+}</code></pre>
+                    <figcaption class="sr-only">
+                        Animated code sample: a short Rust program that greets a crew of rustaceans
+                        and rubyists morphs into the equivalent Ruby program and back.
+                    </figcaption>
+                </figure>
             </div>
         </section>
 

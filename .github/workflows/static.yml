@@ -37,7 +37,7 @@ jobs:
         # Publish only the files the site serves, not source artwork, LICENSE or workflows
         run: |
           mkdir _site
-          cp -r index.html 404.html CNAME robots.txt sitemap.xml css img _site/
+          cp -r index.html 404.html CNAME robots.txt sitemap.xml css js img _site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
