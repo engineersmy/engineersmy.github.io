@@ -106,7 +106,8 @@
       run += chars[k];
     }
     flush();
-    return html;
+    // A trailing empty line in <pre> collapses, which would shrink the card by a row
+    return html || " ";
   }
 
   const highlighted = {};
