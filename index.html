@@ -4,51 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>EngineersMY</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <title>Engineers.MY | Malaysian tech community</title>
+    <meta name="description" content="Engineers.MY supports the Malaysian technology scene by connecting people, sharing knowledge and collaborating on open source. Join us on Discord.">
+    <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141416" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
+    <link rel="canonical" href="https://engineers.my/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Engineers.MY">
+    <meta property="og:locale" content="en_MY">
+    <meta property="og:url" content="https://engineers.my/">
+    <meta property="og:title" content="Engineers.MY">
+    <meta property="og:description" content="Connecting people, sharing knowledge and collaborating across the Malaysian tech scene.">
+    <meta property="og:image" content="https://engineers.my/img/tapir-640.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="640">
+    <meta property="og:image:height" content="640">
+    <meta property="og:image:alt" content="Engineers.MY mascot: a Malayan tapir head with a pink ear">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Mono font is decorative only: load it without blocking first paint -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap">
+    </noscript>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Engineers.MY",
+        "url": "https://engineers.my/",
+        "logo": "https://engineers.my/img/tapir-640.png",
+        "description": "Engineers.MY supports the Malaysian technology scene by connecting people, sharing knowledge and collaborating on open source.",
+        "areaServed": "MY",
+        "sameAs": [
+            "https://github.com/engineersmy",
+            "https://www.youtube.com/@EngineersMY",
+            "https://discord.engineers.my"
+        ]
+    }
+    </script>
 </head>
 
 <body>
-    <div class="header">
-        <section>
-            <h2>Engineers.MY</h2>
-        </section>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="item">
-                <p class="title">Engineers.MY aims to support the Malaysian technology scene via</p>
-                <ul>
-                    <li>
-                        <strong>Connecting People.</strong>
-                        Encourage discovery of technology user groups and communication between each others.
-                    </li>
-                    <li>
-                        <strong>Sharing Knowledge</strong>
-                        Learning, mentor and share advices. Reduce technology gap between the novice and the expert.
-                    </li>
-                    <li>
-                        <strong>Collaboration</strong>
-                        Find like-minded people to work together on
-                        <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a> projects,
-                        community building and commercially.
-                    </li>
-                </ul>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="/">engineers<span class="dot">.</span>my</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#conduct">Code of Conduct</a>
+                <a class="nav-cta" href="https://discord.engineers.my">Discord</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">// Malaysian tech community</p>
+                    <h1>A community for <em>Malaysia's engineers.</em></h1>
+                    <p class="lede">
+                        Engineers.MY supports the Malaysian tech scene. We help people and user
+                        groups find each other, share what they know and work on things together.
+                    </p>
+                    <div class="actions">
+                        <a class="btn btn-primary" href="https://discord.engineers.my">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.4 18.4 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.1-.3 13.6.1 18a19.9 19.9 0 0 0 6 3l1.3-2.1a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2.1a19.8 19.8 0 0 0 6-3c.5-5.1-.8-9.6-3.6-13.6ZM8 15.3c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.5 8 10.5s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Z"/></svg>
+                            Join us on Discord
+                        </a>
+                        <a class="btn btn-ghost" href="#about">What we do</a>
+                    </div>
+                </div>
+                <div class="hero-art">
+                    <picture>
+                        <source srcset="img/tapir-640.avif" type="image/avif">
+                        <img src="img/tapir-640.png" width="640" height="640" fetchpriority="high" decoding="async"
+                            alt="Engineers.MY mascot: a Malayan tapir head with a pink ear">
+                    </picture>
+                </div>
             </div>
-            <div class="item">            
-                <a class="resource" href="https://discord.engineers.my">
-                    Join us on Discord
+        </section>
+
+        <section id="about" class="pillars">
+            <div class="wrap">
+                <h2>What we do</h2>
+                <div class="cards">
+                    <article class="card">
+                        <span class="num">01</span>
+                        <h3>Connecting people</h3>
+                        <p>Find local tech user groups and get them talking to each other.</p>
+                    </article>
+                    <article class="card">
+                        <span class="num">02</span>
+                        <h3>Sharing knowledge</h3>
+                        <p>Learn, mentor and share advice, so beginners can get help from people with more experience.</p>
+                    </article>
+                    <article class="card">
+                        <span class="num">03</span>
+                        <h3>Collaborating</h3>
+                        <p>
+                            Find people to work with on
+                            <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a>
+                            projects, community events or a business.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="conduct" class="conduct">
+            <div class="wrap conduct-box">
+                <div>
+                    <h2>A safe, inclusive community</h2>
+                    <p>
+                        We want Engineers.MY to be safe and welcoming for everyone. Please read
+                        the Code of Conduct and follow it on Discord and at events.
+                    </p>
+                </div>
+                <a class="btn btn-outline" href="https://github.com/engineersmy/core/blob/master/README.md">
+                    Read the Code of Conduct
                 </a>
             </div>
-            <div class="item">
-                We strive to be a safe and inclusive community, please adhere to the
-                <a href="https://github.com/engineersmy/core/blob/master/README.md">Code of Conduct</a>.
-            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>engineers<span class="dot">.</span>my</span>
+            <span class="credit">Tapir logo by <a href="https://github.com/wendko">@wendko</a></span>
+            <nav>
+                <a href="https://discord.engineers.my">Discord</a>
+                <a href="https://github.com/engineersmy">GitHub</a>
+                <a href="https://www.youtube.com/@EngineersMY">YouTube</a>
+            </nav>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>
